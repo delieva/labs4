@@ -1,13 +1,10 @@
 language: node_js
+  - 10
+cache: npm
 before_install:
-- npm i -g npm@version-number
-node_js:
-- "6"
-env:
-- CXX=g++-4.8
-addons:
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    packages:
-    - g++-4.8
+  - npm i
+scripts:
+  - "npm run lint"
+  - "npm run test"
+  - "npm run deploy"
+  - "npm start"
