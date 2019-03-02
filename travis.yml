@@ -3,7 +3,7 @@ cache: npm
 before_install:
   - npm i
 scripts:
-  - "npm run lint"
-  - "npm run test"
-  - "npm run deploy"
-  - "npm start"
+  - npm run lint
+  - npm run test
+  - npm run deploy
+  - npm start
