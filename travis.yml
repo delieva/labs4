@@ -7,3 +7,5 @@ scripts:
   - "npm run test"
   - "npm run deploy"
   - "npm start"
+env:
+  - TRAVIS_BRANCH=$TRAVIS_BRANCH

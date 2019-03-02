@@ -6,8 +6,8 @@
   "scripts": {
     "build": "echo",
     "lint": "eslint index.js",
-    "test": "echo Current branch: $TRAVIS_BRANCH \"Error: no test specified\"",
-    "deploy": "echo",
+    "test": "echo \"Error: no test specified\"",
+    "deploy": "echo Current branch: $TRAVIS_BRANCH",
     "start": "echo"
   },
   "repository": {
