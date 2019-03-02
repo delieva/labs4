@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo",
+    "start": "echo",
     "lint": "eslint index.js",
     "test": "echo \"Error: no test specified\"",
     "deploy": "node deploy",
-    "start": "echo"
+    "build": "echo"
   },
   "repository": {
     "type": "git",
