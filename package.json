@@ -6,9 +6,9 @@
   "scripts": {
     "start": "echo",
     "lint": "eslint index.js",
-    "test": "echo",
     "deploy": "node deploy",
-    "build": "echo"
+    "build": "echo",
+    "test": "echo"
   },
   "repository": {
     "type": "git",
