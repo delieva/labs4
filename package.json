@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "echo",
+    "start": "echo 1",
     "lint": "eslint index.js",
     "deploy": "node deploy",
-    "build": "echo",
-    "test": "echo"
+    "build": "echo 2",
+    "test": "echo 3"
   },
   "repository": {
     "type": "git",
