@@ -1,0 +1,22 @@
+{
+  "name": "labs4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo",
+    "start": "echo",
+    "lint": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delieva/labs4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delieva/labs4/issues"
+  },
+  "homepage": "https://github.com/delieva/labs4#readme"
+}
