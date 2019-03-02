@@ -1,4 +1,4 @@
 'use strict';
 
 let a = 5;
-console.log(a + '\n');
+console.log('**************************s'+a + '\n');

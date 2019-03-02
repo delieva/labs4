@@ -6,7 +6,7 @@
   "scripts": {
     "start": "echo",
     "lint": "eslint index.js",
-    "test": "echo \"Error: no test specified\"",
+    "test": "echo",
     "deploy": "node deploy",
     "build": "echo"
   },
