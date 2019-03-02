@@ -4,6 +4,6 @@ before_install:
   - npm i
 scripts:
   - "npm run lint"
-  - "npm run test"
   - "npm run deploy"
+  - "npm run test"
   - "npm start"
