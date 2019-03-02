@@ -1,5 +1,4 @@
 language: node_js
-  - 6
 cache: npm
 before_install:
   - npm i
