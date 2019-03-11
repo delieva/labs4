@@ -1,5 +1,6 @@
 {
   "name": "zeit-chat",
-  "version": 2
+  "version": 2,
+  "alias": ["my-domain.com", "www.my-domain.com"]
 }
 
