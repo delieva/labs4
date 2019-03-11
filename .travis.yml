@@ -1,6 +1,18 @@
+#language: node_js
+#node_js:
+#  - "10"
+#cache: npm
+before_install:
+  - npm i
+
+#script:
+#  - "npm run lint"
+#  - "npm run deploy"
+#  - "npm run test"
+#  - "npm start"
 language: node_js
 node_js:
-  - "10"
+- "node"
 cache:
   directories:
   - "node_modules" # This will tell Travis CI to cache the dependencies
@@ -18,8 +30,3 @@ deploy:
   skip_cleanup: true
   on:
     master: true
-#script:
-#  - "npm run lint"
-#  - "npm run deploy"
-#  - "npm run test"
-#  - "npm start"
