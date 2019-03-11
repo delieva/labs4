@@ -1,6 +1,6 @@
 {
   "name": "zeit-chat",
   "version": 2,
-  "alias": ["yourdomain.com"]
+  "builds": [{ "src": "*.js", "use": "@now/node" }]
 }
 
