@@ -8,8 +8,8 @@
     "lint": "eslint index.js",
     "deploy": "echo FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK",
     "now-build": "echo 'Built on Travis CI'",
-    "build": "echo 2",
-    "test": "echo 3"
+    "build": "echo $TRAVIS_BRANCH",
+    "test": "echo $TRAVIS_BRANCH"
   },
   "repository": {
     "type": "git",
