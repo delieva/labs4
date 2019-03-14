@@ -6,7 +6,7 @@
   "scripts": {
     "start": "echo 1",
     "lint": "eslint index.js",
-    "deploy": "echo FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK",
+    "deploy": "node deploy",
     "now-build": "echo 'Built on Travis CI'",
     "build": "echo Buildddddd",
     "test": "echo TESTttttt"
