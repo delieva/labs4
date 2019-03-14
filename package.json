@@ -6,10 +6,10 @@
   "scripts": {
     "start": "echo 1",
     "lint": "eslint index.js",
-    "deploy": "echo FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK",
+    "deploy": "echo FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK",
     "now-build": "echo 'Built on Travis CI'",
-    "build": "echo $TRAVIS_BRANCH",
-    "test": "echo $TRAVIS_BRANCH"
+    "build": "echo Buildddddd",
+    "test": "echo TESTttttt"
   },
   "repository": {
     "type": "git",
