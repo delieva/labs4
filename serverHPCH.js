@@ -33,4 +33,32 @@
 // }
 
 
-console.log("FFUUFUUFUFUFUFUUFUFUFUFUUCKFUCKFUCKFUCK");
+const http = require('http');
+const request = require('request');
+
+http.createServer((req, res) => {
+	console.log(req);
+
+	if (req.method === 'GET'){
+		request({
+			method: req.method,
+			url: req.url,
+			headers: req.headers
+		}, (err, resp, body) => {
+			res.end(body)
+		})
+	}
+
+	console.log(req.body);
+	if (req.method === 'POST'){
+		request({
+			method: req.method,
+			url: req.url,
+			headers: req.headers,
+			form: req.form,
+		}, (err, resp, body) => {
+			res.end(body)
+		})
+	}
+
+}).listen(8080);
