@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "echo 1",
-    "lint": "eslint index.js",
+    "start": "echo",
+    "lint": "echo",
     "deploy": "echo",
     "now-build": "echo 'Built on Travis CI'",
     "build": "echo Buildddddd",
