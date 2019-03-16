@@ -4,18 +4,16 @@ const url = require('url');
 
 
 http.createServer(function(clientReq, clientRes){
-	console.log(clientReq);
-	console.log(clientReq.headers.host);
+	// console.log(clientReq);
+	console.log(clientReq.url);
 	
 	
 	
 	const options = {
-		host: clientReq.headers.host,
-		url: clientReq.url,
 		method: clientReq.method
 	};
 	
-	const proxyReq = http.request(options, proxyRes => {
+	const proxyReq = http.request(clientReq.url, proxyRes => {
 		proxyRes.headers=clientRes.headers;
 		proxyRes.pipe(clientRes);
 	});
