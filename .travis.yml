@@ -1,31 +1,20 @@
-#language: node_js
-#node_js:
-#  - "10"
-#cache: npm
-before_install:
-  - npm i
-
-script:
-  - "npm run lint"
-  - "npm run deploy"
-  - "npm run test"
-  - "npm start"
 language: node_js
 node_js:
 - "node"
-cache:
-  directories:
-  - "node_modules" # This will tell Travis CI to cache the dependencies
-before_deploy: npm install now --no-save # Install Now CLI on Travis
+cache: npm
+
+before_install:
+  - npm ci
+
+
+script:
+  - "npm run lint"
+  - "npm run test"
+
 deploy:
-- provider: script # Run a custom deployment script which we will define below
-  script: now --token R1YbbjbJ1qM5MF3GZOgNWv8R
-  skip_cleanup: true
-  on:
-    all_branches: true
-    master: false
 - provider: script
-  script: now --token R1YbbjbJ1qM5MF3GZOgNWv8R && now alias --token R1YbbjbJ1qM5MF3GZOgNWv8R
+  script: now --token $nowtoken && now alias deliieva-$TRAVIS_BRANCH --token $nowtoken
   skip_cleanup: true
   on:
     master: true
+    all_branches: true
