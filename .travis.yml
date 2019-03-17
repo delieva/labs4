@@ -10,6 +10,8 @@ script:
   - "npm run lint"
   - "npm run test"
 
+before_deploy: npm install now --no-save # Install Now CLI on Travis
+
 deploy:
 - provider: script
   script: now --token $nowtoken && now alias deliieva-$TRAVIS_BRANCH --token $nowtoken
