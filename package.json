@@ -2,7 +2,7 @@
   "name": "labs4",
   "version": "1.0.0",
   "description": "",
-  "main": "serverHPCH.js",
+  "main": "index.js",
   "scripts": {
     "start": "echo",
     "lint": "echo",
