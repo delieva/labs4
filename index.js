@@ -10,7 +10,7 @@ const url = require('url');
 
 http.createServer(function(clientReq, clientRes){
 	const clientUrl = url.parse(clientReq.url);
-	console.log(clientReq.url);
+	console.log(clientReq.url + "Fuck");
 	
 	const options = {
 		hostname: clientUrl.host,
