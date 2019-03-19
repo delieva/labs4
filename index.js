@@ -15,7 +15,8 @@ http.createServer(function(clientReq, clientRes){
 	const options = {
 		hostname: clientUrl.host,
 		path: clientUrl.path,
-		method: clientReq.method
+		port: 8080,
+		method: clientReq.method,
 	};
 	
 	const proxyReq = http.request(options, (proxyRes) => {
