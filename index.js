@@ -9,13 +9,16 @@ const url = require('url');
 
 
 http.createServer(function(clientReq, clientRes){
+	if(clientReq.url === "/"){
+		clientReq.url = "http://www.example.com/favicon.ico";
+	}
 	const clientUrl = url.parse(clientReq.url);
-	console.log(clientReq.url + "Fuck");
+	console.log(clientReq.url);
+	
 	
 	const options = {
 		hostname: clientUrl.host,
 		path: clientUrl.path,
-		port: 8080,
 		method: clientReq.method,
 	};
 	
