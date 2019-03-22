@@ -7,8 +7,7 @@ console.log('**************************s'+a + '\n');
 const http = require('http');
 const url = require('url');
 
-
-http.createServer(function(clientReq, clientRes){
+let proxyServerFunc = function(clientReq, clientRes){
 	if(clientReq.url === "/"){
 		clientReq.url = "http://www.example.com/favicon.ico";
 	}
@@ -28,4 +27,8 @@ http.createServer(function(clientReq, clientRes){
 		proxyRes.pipe(clientRes);
 	});
 	proxyReq.end();
-}).listen(8080);
+}
+
+//http.createServer((clientReq, clientRes) =>{proxyServerFunc(clientReq, clientRes)}).listen(8080);
+
+module.exports = proxyServerFunc;
