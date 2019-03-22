@@ -12,7 +12,6 @@ http.createServer(function(clientReq, clientRes){
 	if(clientReq.url === "/"){
 		clientReq.url = "http://www.example.com/favicon.ico";
 	}
-	clientReq.url = "http://zapretno.info/";
 	const clientUrl = url.parse(clientReq.url);
 	console.log(clientReq.url);
 	
