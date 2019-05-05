@@ -1,5 +1,5 @@
 {
-  "name": "zeit-chat",
+  "name": "Ketler",
   "version": 2,
   "builds": [{ "src": "index.js", "use": "@now/node" }],
   "alias": "deliieva",

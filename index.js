@@ -29,6 +29,6 @@ let proxyServerFunc = function(clientReq, clientRes){
 	proxyReq.end();
 }
 
-//http.createServer((clientReq, clientRes) =>{proxyServerFunc(clientReq, clientRes)}).listen(8080);
+http.createServer((clientReq, clientRes) =>{proxyServerFunc(clientReq, clientRes)}).listen(8080);
 
 module.exports = proxyServerFunc;
